@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Creation Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend><h1>Create a New Account</h1></legend>
+            <article>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your full name" name="name" autofocus>
+            </article>
+            <article>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your Email Id" name="email">
+            </article>
+            <article>
+                <label for="pw">Password</label>
+                <input type="password" id="pw" placeholder="Enter your Password" name="pw">
+            </article>
+            <article>
+                <label for="cpw">Conform Password</label>
+                <input type="password" id="cpw" placeholder="Re-Enter your Password" name="cpw">
+            </article>
+            <article>
+                <label for="age">Age</label>
+                <input type="number" id="age" placeholder="Enter your Age" name="age" min="18">
+            </article>
+            <article>
+                <label for="gender-lab">Gender</label>
+                <div class="radio">
+                    <input type="radio" id="male" value="male" name="gender" checked>
+                    <label for="male">Male</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" id="female" value="female" name="gender">
+                <label for="female">Female</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" id="others" value="others" name="gender">
+                    <label for="others">Others</label>
+                </div>
+            </article>
+            <article>
+                <label for="">Select a your State:</label>
+                <select name="state" id="state">
+                    <option value="Tamil">Tamilnadu</option>
+                    <option value="kerala">Kerala</option>
+                    <option value="karnataka">Karnataka</option>
+                    <option value="andra">Andhra</option>
+                    <option value="deelhi">New Delhi</option>
+                </select>
+            </article>
+            <article>
+                <label for="dob">Date of Birth</label>
+                <input type="date" name="date" id="dob">
+            </article>
+            <article>
+                <div>
+                    <input type="checkbox" id="terms" name="terms" required value="Accept">
+                <label for="terms">I Accepts the terms and condition.</label>
+                </div>
+            </article>
+            <button type="submit" id="sub-btn" class="btn">Submit</button>
+            <button type="reset" id="res-btn" class="btn">Reset</button>
+        </fieldset>
+    </form>
+</body>
+</html>
